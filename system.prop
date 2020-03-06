@@ -1,0 +1,131 @@
+#
+# from device/mediateksample/k63v2_64_bsp/system.prop
+#
+#
+# system.prop for generic sdk
+#
+
+vendor.rild.libpath=mtk-ril.so
+vendor.rild.libargs=-d /dev/ttyC0
+
+
+# MTK, Infinity, 20090720 {
+wifi.interface=wlan0
+# MTK, Infinity, 20090720 }
+
+# MTK, mtk03034, 20101210 {
+ro.mediatek.wlan.wsc=1
+# MTK, mtk03034 20101210}
+# MTK, mtk03034, 20110318 {
+ro.mediatek.wlan.p2p=1
+# MTK, mtk03034 20110318}
+
+# MTK, mtk03034, 20101213 {
+mediatek.wlan.ctia=0
+# MTK, mtk03034 20101213}
+
+
+#
+wifi.tethering.interface=ap0
+#
+
+ro.opengles.version=196610
+#ro.kernel.qemu=1
+#ro.kernel.qemu.gles=0
+
+wifi.direct.interface=p2p0
+#dalvik.vm.heapgrowthlimit=256m
+#dalvik.vm.heapsize=512m
+
+# USB MTP WHQL
+ro.sys.usb.mtp.whql.enable=0
+
+# Power off opt in IPO
+sys.ipo.pwrdncap=2
+
+ro.sys.usb.storage.type=mtp
+
+# USB BICR function
+ro.sys.usb.bicr=no
+
+# USB Charge only function
+ro.sys.usb.charging.only=yes
+
+# audio
+ro.camera.sound.forced=0
+ro.audio.silent=0
+
+ro.zygote.preload.enable=0
+
+# temporary enables NAV bar (soft keys)
+qemu.hw.mainkeys=0
+
+ro.kernel.zio=38,108,105,16
+#ro.kernel.qemu=1
+#ro.kernel.qemu.gles=0
+#ro.boot.selinux=disable
+
+# Disable dirty region for Mali
+#debug.hwui.render_dirty_regions=false
+
+ro.sf.lcd_density=320
+
+# performance
+ro.mtk_perf_simple_start_win=1
+ro.mtk_perf_fast_start_win=1
+ro.mtk_perf_response_time=1
+
+# disable ipo for development
+sys.ipo.disable=1
+ro.ap.navigationbar_menu_key=1
+ro.ap.hm_6501=1
+ro.ap.6501_signal=1
+ro.ap.add_pocket_mode=1
+ro.ap.trip_press_powerkey=1
+ro.ap.add_sd_ptp=1
+ro.ap.wifi_ap_name=GIONEE F10 Plus
+ro.ap.wifi_dict_name=GIONEE F10 Plus
+ro.ap.wifi_ap_password=Gionee123
+ro.ap.wifi_ap_max_password=1
+
+#Add by kylin
+ro.ap.flashlight_limit=1
+ro.ap.charging_no_flash=1
+ro.ap.show_record_time=1
+ro.ap.auto_call_record_switch=1
+ro.ap.auto_call_record=1
+ro.ap.emergency_rescure=1
+ro.ap_add_connected_vibrate=1
+ro.config.ringtone_sim2=MakeSmiles.ogg
+ro.ap.fingerprint_camera=1
+#ro.ap.preset_service_number=1
+ro.ap.call_full_screen=1
+ro.ap.three_pointer_screenshot=1
+ro.ap.gesture_call_answer=1
+ro.ap.finger_mute_alarm=1
+ro.ap.f10_sar_value=1
+#end Add by kylin
+
+#zhousl add for factory reset
+ro.ap.master_clear=1
+ro.software.key=JAIGIOSPF10PMTK
+ro.software.type=CGIMPSP100906
+
+ro.ap.remove_xa_xb=1
+#hust add
+ro.ap.show_SerialNumber=1
+#zougui add for sub camera auto flash light threshold
+ro.vendor.sub.camera.autoflash.threshold=26
+ro.ap.show_same_number_count=1
+
+
+### --- Auto gen, not modify! ---###
+
+ro.sw.ver.sh.time=6310_32x3_720x1600_HM_PD6501.sh_20191206_1640
+
+ro.sw.ver.cust=GIONEE_F10_Plus_V07_userdebug
+
+ro.gn.extvernumber=GIONEE_F10_Plus_V07_20191206_userdebug
+
+
+#
